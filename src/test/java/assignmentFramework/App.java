@@ -10,9 +10,9 @@ public class App
 	@Test
     public void AppRun() throws Exception
     {
-    	String projectPath = System.getProperty("user.dir");
+//    	String projectPath = System.getProperty("user.dir");
 
-		System.out.println("Project path "+projectPath);
+		System.out.println("Project Running");
 
 		System.setProperty("webdriver.gecko.driver","E:\\git\\SeleniumJava\\SeleniumFramework\\geckodriver-v0.24.0-win64\\geckodriver.exe");
 		WebDriver driver = new FirefoxDriver();

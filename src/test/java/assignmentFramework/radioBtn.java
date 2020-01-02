@@ -14,8 +14,8 @@ public class radioBtn {
 	@BeforeMethod
 	public void beforeMeth() {
 
-		String projectPath = System.getProperty("user.dir");
-		System.out.println("FrameWork Path :"+projectPath);
+//		String projectPath = System.getProperty("user.dir");
+		System.out.println("FrameWork Running...");
 		System.setProperty("webdriver.gecko.driver","E:\\git\\SeleniumJava\\SeleniumFramework\\geckodriver-v0.24.0-win64\\geckodriver.exe");
 		drive = new FirefoxDriver();
 
