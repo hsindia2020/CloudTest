@@ -1,0 +1,12 @@
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="assignmentFramework.dropdown"/>
+      <class name="assignmentFramework.jQuery"/>
+      <class name="assignmentFramework.AddRemove"/>
+      <class name="assignmentFramework.radioBtn"/>
+      <class name="assignmentFramework.CheckBox"/>
+      <class name="assignmentFramework.App"/>
+    </classes>
+  </test> 
+</suite>
