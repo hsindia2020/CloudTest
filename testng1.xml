@@ -1,5 +1,5 @@
-<suite name="Suite">
-  <test thread-count="5" name="Test">
+<suite name="Assignment01">
+  <test thread-count="5" verbose="4" name="Test">
     <classes>
       <class name="assignmentFramework.dropdown"/>
       <class name="assignmentFramework.jQuery"/>

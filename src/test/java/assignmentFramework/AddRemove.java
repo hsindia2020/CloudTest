@@ -3,12 +3,14 @@ package assignmentFramework;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class AddRemove {
 	
+	@Parameters("webURL")
 	@Test
-	public void Element() throws Exception {
+	public void Element(String webURL) throws Exception {
 		
 //		String projectPath = System.getProperty("user.dir");
 
@@ -17,9 +19,9 @@ public class AddRemove {
 		System.setProperty("webdriver.gecko.driver","E:\\git\\SeleniumJava\\SeleniumFramework\\geckodriver-v0.24.0-win64\\geckodriver.exe");
 		WebDriver driver = new FirefoxDriver();
 
-		String baseURL = "http://the-internet.herokuapp.com/";
+//		String baseURL = "http://the-internet.herokuapp.com/";
 		
-		driver.get(baseURL);
+		driver.get(webURL);
 
 		driver.findElement(By.xpath("//a[contains(text(),'Add/Remove Elements')]")).click();
 		

@@ -50,18 +50,26 @@ public class ajaxForm {
 		String ajaxstring2 = "Ajax Request is Processing!";
 		System.out.println("Ajax text printed on string "+ajaxstring);
 
-		if (ajaxstring == ajaxstring1) {
-			System.out.println("Test case Passed");
-			Assert.assertTrue(true);
-			}
-		else if (ajaxstring == ajaxstring2)  {
-			System.out.println("Test case Passed");
-			Assert.assertTrue(true);
-			}
-		else {
-			System.out.println("Test case Failed");
-			Assert.assertTrue(false);
-		}
+//		polymorphic(occurring in several different forms, in particular with reference to species or genetic variation.)
+		Assert.assertEquals(ajaxstring, ajaxstring2);
+	
+//		try {
+//			Assert.assertEquals(ajaxstring, ajaxstring1);
+//		}catch(Throwable a) {
+//		System.out.println(a);
+//		}
+//		if (ajaxstring == ajaxstring1) {
+//			System.out.println("Test case Passed");
+//			Assert.assertTrue(true);
+//			}
+//		else if (ajaxstring == ajaxstring2)  {
+//			System.out.println("Test case Passed");
+//			Assert.assertTrue(true);
+//			}
+//		else {
+//			System.out.println("Test case Failed");
+//			Assert.assertTrue(false);
+//		}
 	}
 
 	@AfterTest

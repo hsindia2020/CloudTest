@@ -3,13 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="assignmentFramework.ajaxForm">
+      <class name="assignmentFramework.AddRemove">
         <methods>
-          <include name="beforeMeth"/>
-          <include name="afterMeth"/>
-          <include name="formAjax"/>
+          <include name="Element"/>
         </methods>
-      </class> <!-- assignmentFramework.ajaxForm -->
+      </class> <!-- assignmentFramework.AddRemove -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

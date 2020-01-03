@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <parameter name="webURL" value="http://the-internet.herokuapp.com/"/>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="assignmentFramework.BasicAuth">
+        <methods>
+          <include name="Auth" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- assignmentFramework.BasicAuth -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

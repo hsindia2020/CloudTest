@@ -4,12 +4,14 @@ import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class BasicAuth {
 	
+	@Parameters("webURL")
 	@Test
-	public void Auth() throws Exception {
+	public void Auth(String webURL) throws Exception {
 		
 		String filelocation = "E:\\git\\SeleniumJava\\Assign\\Assignment\\Auth.exe";
 		
@@ -20,9 +22,9 @@ public class BasicAuth {
 		System.setProperty("webdriver.gecko.driver","E:\\git\\SeleniumJava\\SeleniumFramework\\geckodriver-v0.24.0-win64\\geckodriver.exe");
 		WebDriver driver = new FirefoxDriver();
 
-		String baseURL = "http://the-internet.herokuapp.com/";
+//		String baseURL = "http://the-internet.herokuapp.com/";
 		
-		driver.get(baseURL);
+		driver.get(webURL);
 
 		driver.findElement(By.xpath("//a[contains(text(),'Basic Auth')]")).click();
 		
