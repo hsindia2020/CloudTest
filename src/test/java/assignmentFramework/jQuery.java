@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
@@ -21,7 +22,10 @@ WebDriver drive = null;
 //		String projectPath = System.getProperty("user.dir");
 		System.out.println("FrameWork Running...");
 		System.setProperty("webdriver.gecko.driver","E:\\git\\SeleniumJava\\SeleniumFramework\\geckodriver-v0.24.0-win64\\geckodriver.exe");
-		drive = new FirefoxDriver();
+		FirefoxOptions options = new FirefoxOptions();
+		options.addArguments("--headless");
+		options.addArguments("window-size=1280,800");
+		drive = new FirefoxDriver(options);
 		drive.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
 	}
 

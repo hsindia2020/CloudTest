@@ -3,10 +3,9 @@
     <classes>
       <class name="assignmentFramework.dropdown"/>
       <class name="assignmentFramework.jQuery"/>
-      <class name="assignmentFramework.AddRemove"/>
       <class name="assignmentFramework.radioBtn"/>
       <class name="assignmentFramework.CheckBox"/>
-      <class name="assignmentFramework.App"/>
+      <class name="assignmentFramework.ajaxForm"/>
     </classes>
   </test> 
 </suite>

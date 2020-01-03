@@ -3,6 +3,7 @@ package assignmentFramework;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.annotations.Test;
 
 public class CheckBox {
@@ -15,7 +16,10 @@ public class CheckBox {
 		System.out.println("Project Running...");
 
 		System.setProperty("webdriver.gecko.driver","E:\\git\\SeleniumJava\\SeleniumFramework\\geckodriver-v0.24.0-win64\\geckodriver.exe");
-		WebDriver driver = new FirefoxDriver();
+		FirefoxOptions options = new FirefoxOptions();
+		options.addArguments("--headless");
+		options.addArguments("window-size=1280,800");
+		WebDriver driver = new FirefoxDriver(options);
 
 		String baseURL = "https://www.seleniumeasy.com/test/basic-checkbox-demo.html";
 		

@@ -1,8 +1,11 @@
 <suite name="Suite">
-  <test thread-count="5" verbose="10" name="Test">
-    <classes>
-      <class name="assignmentFramework.BasicAuth"/>
-      <class name="assignmentFramework.ajaxForm"/>
-    </classes>
-  </test>
+	<test thread-count="5" verbose="10" name="Test">
+		<parameter name="webURL"
+			value="http://the-internet.herokuapp.com/" />
+		<classes>
+			<class name="assignmentFramework.BasicAuth" />
+			<class name="assignmentFramework.App" />
+			<class name="assignmentFramework.AddRemove" />
+		</classes>
+	</test>
 </suite> 
