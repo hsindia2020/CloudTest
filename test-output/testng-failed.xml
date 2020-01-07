@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="2" name="TestFireFox(failed)" parallel="tests">
     <classes>
-      <class name="assignmentFramework.BasicAuth">
+      <class name="interactions.FireFoxGridTC">
         <methods>
-          <include name="Auth"/>
+          <include name="DemoTC"/>
         </methods>
-      </class> <!-- assignmentFramework.BasicAuth -->
+      </class> <!-- interactions.FireFoxGridTC -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- TestFireFox(failed) -->
+  <test thread-count="2" name="TestChrome(failed)" parallel="tests">
+    <classes>
+      <class name="interactions.GridTC">
+        <methods>
+          <include name="DemoTC"/>
+        </methods>
+      </class> <!-- interactions.GridTC -->
+    </classes>
+  </test> <!-- TestChrome(failed) -->
+</suite> <!-- Failed suite [Suite] -->

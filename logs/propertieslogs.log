@@ -1,0 +1,20 @@
+[INFO ] 2020-01-07 14:34:17.404 [main] Log4jFile - This is a Information MSG
+[ERROR] 2020-01-07 14:34:17.409 [main] Log4jFile - This is an Error
+[WARN ] 2020-01-07 14:34:17.410 [main] Log4jFile - Warning Message !!!!
+[DEBUG] 2020-01-07 14:34:17.410 [main] Log4jFile - This is a debug message
+[INFO ] 2020-01-07 14:34:17.410 [main] Log4jFile - This is an info message
+[WARN ] 2020-01-07 14:34:17.410 [main] Log4jFile - This is a warn message
+[ERROR] 2020-01-07 14:34:17.411 [main] Log4jFile - This is an error message
+[FATAL] 2020-01-07 14:34:17.411 [main] Log4jFile - This is a fatal message
+[INFO ] 2020-01-07 15:32:44.486 [main] Log4jFile - This is a Information MSG
+[ERROR] 2020-01-07 15:32:44.493 [main] Log4jFile - This is an Error
+[WARN ] 2020-01-07 15:32:44.494 [main] Log4jFile - Warning Message !!!!
+[TRACE] 2020-01-07 15:32:44.495 [main] Log4jFile - WE ARE IN TRACE MSG!!!
+[DEBUG] 2020-01-07 15:32:44.495 [main] Log4jFile - This is a debug message
+[INFO ] 2020-01-07 15:32:44.495 [main] Log4jFile - This is an info message
+[WARN ] 2020-01-07 15:32:44.496 [main] Log4jFile - This is a warn message
+[ERROR] 2020-01-07 15:32:44.496 [main] Log4jFile - This is an error message
+[FATAL] 2020-01-07 15:32:44.496 [main] Log4jFile - This is a fatal message
+[DEBUG] 2020-01-07 15:40:01.210 [main] GridTC - THIS IS THE LOG MSG!!!
+[INFO ] 2020-01-07 15:43:43.050 [main] FireFoxGridTC - THis is the Information MSG!!!
+[INFO ] 2020-01-07 15:58:13.361 [main] FireFoxGridTC - THis is the Information MSG!!!

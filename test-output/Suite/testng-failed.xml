@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]">
-  <parameter name="webURL" value="http://the-internet.herokuapp.com/"/>
-  <test thread-count="5" name="Test(failed)">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="2" name="TestFireFox(failed)" parallel="tests">
     <classes>
-      <class name="assignmentFramework.BasicAuth">
+      <class name="interactions.FireFoxGridTC">
         <methods>
-          <include name="Auth" invocation-numbers="0"/>
+          <include name="DemoTC"/>
         </methods>
-      </class> <!-- assignmentFramework.BasicAuth -->
+      </class> <!-- interactions.FireFoxGridTC -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- TestFireFox(failed) -->
+  <test thread-count="2" name="TestChrome(failed)" parallel="tests">
+    <classes>
+      <class name="interactions.GridTC">
+        <methods>
+          <include name="DemoTC"/>
+        </methods>
+      </class> <!-- interactions.GridTC -->
+    </classes>
+  </test> <!-- TestChrome(failed) -->
 </suite> <!-- Failed suite [Suite] -->

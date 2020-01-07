@@ -1,4 +1,8 @@
 <suite name="Suite">
+
+<listeners>
+	<listener class-name="assignmentFramework.Listener" />
+</listeners>
 	<test thread-count="5" verbose="10" name="Test">
 		<parameter name="webURL"
 			value="http://the-internet.herokuapp.com/" />

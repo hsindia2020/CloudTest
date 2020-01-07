@@ -1,134 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="10" passed="10">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="61875" started-at="2020-01-03T18:31:46Z" finished-at="2020-01-03T18:32:48Z">
+  <suite name="Default suite" duration-ms="25751" started-at="2020-01-07T10:27:54Z" finished-at="2020-01-07T10:28:19Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="61875" started-at="2020-01-03T18:31:46Z" finished-at="2020-01-03T18:32:48Z">
-      <class name="assignmentFramework.App">
-        <test-method status="PASS" signature="AppRun(java.lang.String)[pri:0, instance:assignmentFramework.App@77caeb3e]" name="AppRun" duration-ms="15719" started-at="2020-01-03T18:32:15Z" finished-at="2020-01-03T18:32:30Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://the-internet.herokuapp.com/]]>
-              </value>
-            </param>
-          </params>
+    <test name="Default test" duration-ms="25751" started-at="2020-01-07T10:27:54Z" finished-at="2020-01-07T10:28:19Z">
+      <class name="interactions.FireFoxGridTC">
+        <test-method status="PASS" signature="DemoTC()[pri:0, instance:interactions.FireFoxGridTC@3e6fa38a]" name="DemoTC" duration-ms="25691" started-at="2020-01-07T10:27:54Z" finished-at="2020-01-07T10:28:19Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AppRun -->
-      </class> <!-- assignmentFramework.App -->
-      <class name="assignmentFramework.BasicAuth">
-        <test-method status="PASS" signature="Auth(java.lang.String)[pri:0, instance:assignmentFramework.BasicAuth@66a3ffec]" name="Auth" duration-ms="28275" started-at="2020-01-03T18:31:46Z" finished-at="2020-01-03T18:32:15Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://the-internet.herokuapp.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Auth -->
-      </class> <!-- assignmentFramework.BasicAuth -->
-      <class name="assignmentFramework.AddRemove">
-        <test-method status="PASS" signature="Element(java.lang.String)[pri:0, instance:assignmentFramework.AddRemove@1e88b3c]" name="Element" duration-ms="17822" started-at="2020-01-03T18:32:30Z" finished-at="2020-01-03T18:32:48Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://the-internet.herokuapp.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Element -->
-      </class> <!-- assignmentFramework.AddRemove -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
-  <suite name="FirstSuite" duration-ms="0" started-at="2020-01-03T18:35:17Z" finished-at="2020-01-03T18:35:17Z">
-    <groups>
-    </groups>
-  </suite> <!-- FirstSuite -->
-  <suite name="Assignment01" duration-ms="148913" started-at="2020-01-03T18:32:48Z" finished-at="2020-01-03T18:35:17Z">
-    <groups>
-    </groups>
-    <test name="Test" duration-ms="148913" started-at="2020-01-03T18:32:48Z" finished-at="2020-01-03T18:35:17Z">
-      <class name="assignmentFramework.jQuery">
-        <test-method status="PASS" signature="beforeMeth()[pri:0, instance:assignmentFramework.jQuery@5f2108b5]" name="beforeMeth" is-config="true" duration-ms="5898" started-at="2020-01-03T18:33:11Z" finished-at="2020-01-03T18:33:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMeth -->
-        <test-method status="PASS" signature="Category()[pri:0, instance:assignmentFramework.jQuery@5f2108b5]" name="Category" duration-ms="14447" started-at="2020-01-03T18:33:17Z" finished-at="2020-01-03T18:33:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Category -->
-        <test-method status="PASS" signature="beforeMeth()[pri:0, instance:assignmentFramework.jQuery@5f2108b5]" name="beforeMeth" is-config="true" duration-ms="5384" started-at="2020-01-03T18:33:31Z" finished-at="2020-01-03T18:33:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMeth -->
-        <test-method status="PASS" signature="Search()[pri:0, instance:assignmentFramework.jQuery@5f2108b5]" name="Search" duration-ms="14918" started-at="2020-01-03T18:33:37Z" finished-at="2020-01-03T18:33:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Search -->
-        <test-method status="PASS" signature="beforeMeth()[pri:0, instance:assignmentFramework.jQuery@5f2108b5]" name="beforeMeth" is-config="true" duration-ms="5387" started-at="2020-01-03T18:33:52Z" finished-at="2020-01-03T18:33:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMeth -->
-        <test-method status="PASS" signature="SearchBox()[pri:0, instance:assignmentFramework.jQuery@5f2108b5]" name="SearchBox" duration-ms="16849" started-at="2020-01-03T18:33:57Z" finished-at="2020-01-03T18:34:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SearchBox -->
-      </class> <!-- assignmentFramework.jQuery -->
-      <class name="assignmentFramework.radioBtn">
-        <test-method status="PASS" signature="beforeMeth()[pri:0, instance:assignmentFramework.radioBtn@31a5c39e]" name="beforeMeth" is-config="true" duration-ms="5436" started-at="2020-01-03T18:34:14Z" finished-at="2020-01-03T18:34:19Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMeth -->
-        <test-method status="PASS" signature="radio()[pri:0, instance:assignmentFramework.radioBtn@31a5c39e]" name="radio" duration-ms="14415" started-at="2020-01-03T18:34:19Z" finished-at="2020-01-03T18:34:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- radio -->
-      </class> <!-- assignmentFramework.radioBtn -->
-      <class name="assignmentFramework.dropdown">
-        <test-method status="PASS" signature="beforeMeth()[pri:0, instance:assignmentFramework.dropdown@e45f292]" name="beforeMeth" is-config="true" duration-ms="5893" started-at="2020-01-03T18:32:48Z" finished-at="2020-01-03T18:32:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMeth -->
-        <test-method status="PASS" signature="dropD()[pri:0, instance:assignmentFramework.dropdown@e45f292]" name="dropD" duration-ms="17106" started-at="2020-01-03T18:32:54Z" finished-at="2020-01-03T18:33:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- dropD -->
-      </class> <!-- assignmentFramework.dropdown -->
-      <class name="assignmentFramework.CheckBox">
-        <test-method status="PASS" signature="Check()[pri:0, instance:assignmentFramework.CheckBox@3f49dace]" name="Check" duration-ms="22902" started-at="2020-01-03T18:34:34Z" finished-at="2020-01-03T18:34:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Check -->
-      </class> <!-- assignmentFramework.CheckBox -->
-      <class name="assignmentFramework.ajaxForm">
-        <test-method status="PASS" signature="beforeMeth()[pri:0, instance:assignmentFramework.ajaxForm@1e397ed7]" name="beforeMeth" is-config="true" duration-ms="5394" started-at="2020-01-03T18:34:57Z" finished-at="2020-01-03T18:35:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMeth -->
-        <test-method status="PASS" signature="formAjax()[pri:0, instance:assignmentFramework.ajaxForm@1e397ed7]" name="formAjax" duration-ms="7364" started-at="2020-01-03T18:35:02Z" finished-at="2020-01-03T18:35:10Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- formAjax -->
-        <test-method status="PASS" signature="afterMeth()[pri:0, instance:assignmentFramework.ajaxForm@1e397ed7]" name="afterMeth" is-config="true" duration-ms="4231" started-at="2020-01-03T18:35:10Z" finished-at="2020-01-03T18:35:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMeth -->
-        <test-method status="PASS" signature="afterMeth()[pri:0, instance:assignmentFramework.dropdown@e45f292]" name="afterMeth" is-config="true" duration-ms="1130" started-at="2020-01-03T18:35:14Z" finished-at="2020-01-03T18:35:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMeth -->
-        <test-method status="PASS" signature="afterMeth()[pri:0, instance:assignmentFramework.radioBtn@31a5c39e]" name="afterMeth" is-config="true" duration-ms="2135" started-at="2020-01-03T18:35:15Z" finished-at="2020-01-03T18:35:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMeth -->
-      </class> <!-- assignmentFramework.ajaxForm -->
-    </test> <!-- Test -->
-  </suite> <!-- Assignment01 -->
+        </test-method> <!-- DemoTC -->
+      </class> <!-- interactions.FireFoxGridTC -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
