@@ -80,7 +80,7 @@
 				<configuration>
 				<includes>
 				<include>
-				AddRemove.java	
+				radioBtn.java	
 				</include>
 				</includes>
 					<!-- <suiteXmlFiles>
