@@ -80,11 +80,11 @@
 				<configuration>
 				<includes>
 				<include>
-				dropdown.java	
+				AddRemove.java	
 				</include>
 				</includes>
 					<!-- <suiteXmlFiles>
-				<suiteXmlFile>${testxml}</suiteXmlFile>		
+						<suiteXmlFile>${testxml}</suiteXmlFile>		
 						<suiteXmlFile>TestSuite.xml</suiteXmlFile>
 					</suiteXmlFiles> -->
 				</configuration>

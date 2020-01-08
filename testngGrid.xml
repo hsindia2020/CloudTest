@@ -5,7 +5,7 @@
     <classes>
       <class name="interactions.GridTC"/>
     </classes>
-  </test> <!-- Test -->
+  </test> <!-- Test Docker -->
     
   <test name="TestFireFox">
     <classes>
@@ -13,4 +13,4 @@
     </classes>
   </test> <!-- Test -->
   
-</suite> <!-- Suite -->
+</suite> <!-- Suite Docker -->
