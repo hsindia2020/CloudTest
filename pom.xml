@@ -80,7 +80,7 @@
 				<configuration>
 				<includes>
 				<include>
-				radioBtn.java	
+				CheckBox.java	
 				</include>
 				</includes>
 					<!-- <suiteXmlFiles>
