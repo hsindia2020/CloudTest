@@ -17,23 +17,38 @@ public class BrowserStack {
 
 	    DesiredCapabilities caps = new DesiredCapabilities();
 	    caps.setCapability("os", "OS X");
-	    caps.setCapability("os_version", "Sierra");
+	    caps.setCapability("os_version", "High Sierra");
 	    caps.setCapability("browser", "Safari");
-	    caps.setCapability("browser_version", "10.0");
-	    caps.setCapability("project", "BroswerStack");
-	    caps.setCapability("build", "1.1");
+	    caps.setCapability("browser_version", "11.0");
 	    caps.setCapability("browserstack.local", "false");
 	    caps.setCapability("browserstack.selenium_version", "3.5.2");
 
-
 	    WebDriver driver = new RemoteWebDriver(new java.net.URL(URL), caps);
-	    driver.get("http://www.google.com");
+	   /* driver.get("http://www.google.com");
 	    WebElement element = driver.findElement(By.name("q"));
 
 	    element.sendKeys("BrowserStack");
 	    element.submit();
 
-	    System.out.println(driver.getTitle());
+	    System.out.println(driver.getTitle());*/
+	    
+	    String baseURL = "https://www.seleniumeasy.com/test/";
+
+		driver.get(baseURL);
+
+		driver.findElement(By.xpath("//a[@class='dropdown-toggle'][contains(text(),'Input Forms')]")).click();
+
+		Thread.sleep(3000);
+		
+		driver.findElement(By.xpath("//ul[@class='dropdown-menu']//a[contains(text(),'Radio Buttons Demo')]")).click();
+		driver.findElement(By.xpath("//body/div/div/div/div/div/label[contains(text(),'Female')]/input[1]")).click();
+		driver.findElement(By.xpath("//button[@id='buttoncheck']")).click();
+		Thread.sleep(3000);
+		
+		driver.findElement(By.xpath("//html//body//div//div//div//div//div//div//label[contains(text(),'Male')]//input")).click();
+		driver.findElement(By.xpath("//label[contains(text(),'15 to 50')]")).click();
+		driver.findElement(By.xpath("//button[contains(text(),'Get values')]")).click();
+		Thread.sleep(3000);
 	    driver.quit();
 
 	  }
