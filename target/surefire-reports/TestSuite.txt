@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 268.197 s <<< FAILURE! - in TestSuite
+assignmentFramework.BasicAuth.Auth  Time elapsed: 30.194 s  <<< FAILURE!
+org.openqa.selenium.UnhandledAlertException: 
+Dismissed user prompt dialog: http://the-internet.herokuapp.com is requesting your username and password. The site says: “Restricted Area”: 
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HARMEET-PC', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.3.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20191126000427, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 4740, moz:profile: C:\Users\Harmeet\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 70789c15-79ab-4975-bca4-1a2eb2bb7396
+	at assignmentFramework.BasicAuth.Auth(BasicAuth.java:46)
+
