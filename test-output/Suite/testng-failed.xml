@@ -1,22 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
-  <test thread-count="2" name="TestFireFox(failed)" parallel="tests">
+<suite name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="assignmentFramework.Listener"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="webURL" value="http://the-internet.herokuapp.com/"/>
     <classes>
-      <class name="interactions.FireFoxGridTC">
+      <class name="assignmentFramework.App">
         <methods>
-          <include name="DemoTC"/>
+          <include name="AppRun" invocation-numbers="0"/>
         </methods>
-      </class> <!-- interactions.FireFoxGridTC -->
-    </classes>
-  </test> <!-- TestFireFox(failed) -->
-  <test thread-count="2" name="TestChrome(failed)" parallel="tests">
-    <classes>
-      <class name="interactions.GridTC">
+      </class> <!-- assignmentFramework.App -->
+      <class name="assignmentFramework.AddRemove">
         <methods>
-          <include name="DemoTC"/>
+          <include name="Element" invocation-numbers="0"/>
         </methods>
-      </class> <!-- interactions.GridTC -->
+      </class> <!-- assignmentFramework.AddRemove -->
+      <class name="assignmentFramework.BasicAuth">
+        <methods>
+          <include name="Auth" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- assignmentFramework.BasicAuth -->
     </classes>
-  </test> <!-- TestChrome(failed) -->
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

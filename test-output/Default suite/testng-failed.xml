@@ -3,13 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="toolPackage.TestGrid">
+      <class name="assignmentFramework.BasicAuth">
         <methods>
-          <include name="beforeMeth"/>
-          <include name="test02"/>
-          <include name="test01"/>
+          <include name="Auth"/>
         </methods>
-      </class> <!-- toolPackage.TestGrid -->
+      </class> <!-- assignmentFramework.BasicAuth -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

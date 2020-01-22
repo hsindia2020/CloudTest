@@ -25,18 +25,20 @@ public class applitool {
 		try {
 			// Start visual testing with browser viewport set to 1024x768.
 			// Make sure to use the returned driver from this point on.
-			driver = eyes.open(driver, "Applitools", "Test Web Page", new 
+			driver = eyes.open(driver, "Applitools", "Test Google Page", new 
 					RectangleSize(1024, 768));
 
-			driver.get("https://applitools.com/helloworld");
+			driver.get("https://www.google.com/");
 
 			// Visual validation point #1
-			eyes.checkWindow("Hello!");
+			eyes.checkWindow("Google");
+			
+			driver.findElement(By.xpath("//input[@name='q']")).sendKeys("taylor");
 
-			driver.findElement(By.tagName("button")).click();
+			driver.findElement(By.xpath("//div[@class='FPdoLc tfB0Bf']//input[@name='btnK']")).click();
 
 			// Visual validation point #2
-			eyes.checkWindow("Click!");
+			eyes.checkWindow("Google");
 
 			// End visual testing. Validate visual correctness.
 			eyes.close();
