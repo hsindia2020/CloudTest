@@ -1,50 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="89321" started-at="2020-01-20T10:02:50Z" finished-at="2020-01-20T10:04:20Z">
+  <suite name="Default suite" duration-ms="30120" started-at="2020-01-24T10:21:33Z" finished-at="2020-01-24T10:22:03Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="89321" started-at="2020-01-20T10:02:50Z" finished-at="2020-01-20T10:04:20Z">
-      <class name="assignmentFramework.App">
-        <test-method status="PASS" signature="AppRun(java.lang.String)[pri:0, instance:assignmentFramework.App@73846619]" name="AppRun" duration-ms="21468" started-at="2020-01-20T10:03:34Z" finished-at="2020-01-20T10:03:56Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://the-internet.herokuapp.com/]]>
-              </value>
-            </param>
-          </params>
+    <test name="Default test" duration-ms="30120" started-at="2020-01-24T10:21:33Z" finished-at="2020-01-24T10:22:03Z">
+      <class name="assignmentFramework.dropdown">
+        <test-method status="PASS" signature="beforeMeth()[pri:0, instance:assignmentFramework.dropdown@2d928643]" name="beforeMeth" is-config="true" duration-ms="8976" started-at="2020-01-24T10:21:33Z" finished-at="2020-01-24T10:21:42Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AppRun -->
-      </class> <!-- assignmentFramework.App -->
-      <class name="assignmentFramework.BasicAuth">
-        <test-method status="PASS" signature="Auth(java.lang.String)[pri:0, instance:assignmentFramework.BasicAuth@3159c4b8]" name="Auth" duration-ms="43631" started-at="2020-01-20T10:02:50Z" finished-at="2020-01-20T10:03:34Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://the-internet.herokuapp.com/]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- beforeMeth -->
+        <test-method status="PASS" signature="dropD()[pri:0, instance:assignmentFramework.dropdown@2d928643]" name="dropD" duration-ms="16341" started-at="2020-01-24T10:21:42Z" finished-at="2020-01-24T10:21:59Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Auth -->
-      </class> <!-- assignmentFramework.BasicAuth -->
-      <class name="assignmentFramework.AddRemove">
-        <test-method status="PASS" signature="Element(java.lang.String)[pri:0, instance:assignmentFramework.AddRemove@4bec1f0c]" name="Element" duration-ms="24094" started-at="2020-01-20T10:03:56Z" finished-at="2020-01-20T10:04:20Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://the-internet.herokuapp.com/]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- dropD -->
+        <test-method status="PASS" signature="afterMeth()[pri:0, instance:assignmentFramework.dropdown@2d928643]" name="afterMeth" is-config="true" duration-ms="4747" started-at="2020-01-24T10:21:59Z" finished-at="2020-01-24T10:22:03Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Element -->
-      </class> <!-- assignmentFramework.AddRemove -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- afterMeth -->
+      </class> <!-- assignmentFramework.dropdown -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

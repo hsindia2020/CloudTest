@@ -45,11 +45,11 @@ public class dropdown {
 		Select month_dd = new Select(month_dropdown);
 		
 		WebElement selected_month = month_dd.getFirstSelectedOption();
-		System.out.println("Month selected is "+selected_month.getText());
+		System.out.println("Day selected is "+selected_month.getText());
 		
 		month_dd.selectByVisibleText("Tuesday");
-		WebElement selected_month1 = month_dd.getFirstSelectedOption();
-		System.out.println("Month selected is "+selected_month1.getText());
+		WebElement selected_day = month_dd.getFirstSelectedOption();
+		System.out.println("Day selected is "+selected_day.getText());
 		Thread.sleep(3000);
 		
 		WebElement state_dropdown = drive.findElement(By.id("multi-select"));

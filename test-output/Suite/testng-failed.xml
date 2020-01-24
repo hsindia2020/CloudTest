@@ -7,16 +7,6 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="webURL" value="http://the-internet.herokuapp.com/"/>
     <classes>
-      <class name="assignmentFramework.App">
-        <methods>
-          <include name="AppRun" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- assignmentFramework.App -->
-      <class name="assignmentFramework.AddRemove">
-        <methods>
-          <include name="Element" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- assignmentFramework.AddRemove -->
       <class name="assignmentFramework.BasicAuth">
         <methods>
           <include name="Auth" invocation-numbers="0"/>
