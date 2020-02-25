@@ -17,6 +17,14 @@
 
 	<dependencies>
 
+		<!-- https://mvnrepository.com/artifact/commons-collections/commons-collections -->
+		<dependency>
+			<groupId>commons-collections</groupId>
+			<artifactId>commons-collections</artifactId>
+			<version>3.2.2</version>
+		</dependency>
+
+
 		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
@@ -45,7 +53,6 @@
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
 			<version>6.9.8</version>
-			<scope>test</scope>
 		</dependency>
 
 		<dependency>
@@ -78,9 +85,9 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>3.0.0-M4</version>
 				<configuration>
-		<!-- 		<includes>	<include>CheckBox.java</include> </includes> -->
+					<!-- <includes> <include>CheckBox.java</include> </includes> -->
 					<suiteXmlFiles>
-						<!-- <suiteXmlFile>${testxml}</suiteXmlFile>		 -->
+						<!-- <suiteXmlFile>${testxml}</suiteXmlFile> -->
 						<suiteXmlFile>TestSuite.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>

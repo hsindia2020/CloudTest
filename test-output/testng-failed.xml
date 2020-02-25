@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [RetryAnalyzer]">
   <listeners>
-    <listener class-name="assignmentFramework.Listener"/>
+    <listener class-name="com.pcs.retryAnalyzer.TransforTestcase"/>
   </listeners>
-  <test thread-count="5" name="Test(failed)">
-    <parameter name="webURL" value="http://the-internet.herokuapp.com/"/>
+  <test thread-count="5" name="TestRetry(failed)">
     <classes>
-      <class name="assignmentFramework.BasicAuth">
+      <class name="com.pcs.retryAnalyzer.NewTest">
         <methods>
-          <include name="Auth" invocation-numbers="0"/>
+          <include name="RetryTC2"/>
+          <include name="RetryTC1"/>
         </methods>
-      </class> <!-- assignmentFramework.BasicAuth -->
+      </class> <!-- com.pcs.retryAnalyzer.NewTest -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- TestRetry(failed) -->
+</suite> <!-- Failed suite [RetryAnalyzer] -->

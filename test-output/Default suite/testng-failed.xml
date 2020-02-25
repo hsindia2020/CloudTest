@@ -3,11 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="assignmentFramework.BasicAuth">
+      <class name="com.pcs.retryAnalyzer.NewTest">
         <methods>
-          <include name="Auth"/>
+          <include name="RetryTC"/>
+          <include name="RetryTC2"/>
         </methods>
-      </class> <!-- assignmentFramework.BasicAuth -->
+      </class> <!-- com.pcs.retryAnalyzer.NewTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

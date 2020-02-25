@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="RetryAnalyzer">
+
+<listeners>
+<listener class-name = "com.pcs.retryAnalyzer.TransforTestcase"/>
+</listeners>
+  <test name="TestRetry">
+    <classes>
+      <class name="com.pcs.retryAnalyzer.NewTest"/>
+    </classes>
+  </test> <!-- TestRetry -->
+</suite> <!-- RetryAnalyzer -->
