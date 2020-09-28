@@ -22,7 +22,7 @@ public class dropdown {
 		System.setProperty("webdriver.gecko.driver","E:\\git\\SeleniumJava\\SeleniumFramework\\geckodriver-v0.24.0-win64\\geckodriver.exe");
 		
 		FirefoxOptions options = new FirefoxOptions();
-		options.addArguments("--headless");
+//		options.addArguments("--headless");
 		options.addArguments("window-size=1280,800");
 		drive = new FirefoxDriver(options);
 
@@ -42,6 +42,9 @@ public class dropdown {
 		
 		WebElement month_dropdown = drive.findElement(By.xpath("//select[@id='select-demo']"));
 		
+		/**
+		 * Using "Select" for dropdown selection, as static values available
+		 */
 		Select month_dd = new Select(month_dropdown);
 		
 		WebElement selected_month = month_dd.getFirstSelectedOption();
@@ -50,7 +53,7 @@ public class dropdown {
 		month_dd.selectByVisibleText("Tuesday");
 		WebElement selected_day = month_dd.getFirstSelectedOption();
 		System.out.println("Day selected is "+selected_day.getText());
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		
 		WebElement state_dropdown = drive.findElement(By.id("multi-select"));
 		Select state_dd = new Select(state_dropdown);

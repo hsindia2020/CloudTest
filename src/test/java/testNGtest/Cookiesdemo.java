@@ -24,7 +24,7 @@ public class Cookiesdemo {
 		
 		Set<Cookie> allCookies =  driver.manage().getCookies();
 		System.out.println("Count all the Cookies :"+allCookies.size());
-		Assert.assertTrue(true	);
+		Assert.assertTrue(true);
 		
 		driver.navigate().refresh();
 		

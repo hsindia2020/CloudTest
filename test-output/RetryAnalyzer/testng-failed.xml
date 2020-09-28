@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [RetryAnalyzer]">
+  <listeners>
+    <listener class-name="com.pcs.retryAnalyzer.TransforTestcase"/>
+  </listeners>
+  <test thread-count="5" name="TestRetry(failed)">
+    <classes>
+      <class name="com.pcs.retryAnalyzer.NewTest">
+        <methods>
+          <include name="RetryTC2"/>
+          <include name="RetryTC1"/>
+        </methods>
+      </class> <!-- com.pcs.retryAnalyzer.NewTest -->
+    </classes>
+  </test> <!-- TestRetry(failed) -->
+</suite> <!-- Failed suite [RetryAnalyzer] -->

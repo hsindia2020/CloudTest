@@ -30,7 +30,6 @@ public class ArrayListDemo {
 	  if (colors.contains("Yellow")) {
 		  System.out.println("Yellow in contains conditions");
 	  }
-		  
 	  Collections.sort(colors);
 	  
 	  /**
@@ -41,15 +40,13 @@ public class ArrayListDemo {
 	   * shuffle(List list): Shuffles (i.e., randomizes) the elements in list.
 	   * 
 	   */
-	  
-	  colors.remove("Yellow");
-	  System.out.println("Prints Array List in single short & Remove 'Yellow' ** "+colors+" "+colors.size());
-	  
+	  String remcolor = "Yellow";
+	  colors.remove(remcolor);
+	  System.out.println("Prints Array List in single Args[] Remove "+remcolor+" "+colors+" "+colors.size());
   }
-  
   @BeforeMethod
   public void beforeMethod() {
-	  
+	  System.out.println("beforeMethod ** called **");
   }
 
 }

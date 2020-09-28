@@ -21,7 +21,7 @@ public class HashSetDemo {
 	    set.add("A");
 	    set.add("B");
 	    set.add("C");
-	    //"B" will be print once.
+	    //"B" will be print once because its already on HashSet.
 	    set.add("B");
 	    System.out.println(set);
 	    System.out.println(set.size());

@@ -14,5 +14,6 @@ public class AnonymousProg {
         };
          Machine m2 = new Machine();
          m2.start();
+         m2.end();
     }
 }

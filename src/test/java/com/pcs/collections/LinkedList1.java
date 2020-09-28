@@ -7,7 +7,7 @@ package com.pcs.collections;
  * The LinkedList is better for manipulating data, such as making numerous inserts and deletes.
  * 
  * In addition to storing the object, the LinkedList stores the memory address 
- * (or link) of the element that follows it. 
+ * (or link) of the element that follows it.
  * It's called a LinkedList because each element contains a link to the neighboring element.
  * 
  * - Use an ArrayList when you need rapid access to your data.
@@ -33,13 +33,15 @@ public class LinkedList1 {
 		 * you must obtain one. Each of the collection classes provides an iterator() method that returns an iterator
 		 * to the start of the collection. By using this iterator object,
 		 * you can access each element in the collection, one element at a time.
-		 * 
-		 * The Iterator class provides the following methods:
+		 */
+		
+		/** The Iterator class provides the following methods:
 		 * hasNext(): Returns true if there is at least one more element; otherwise, it returns false.
 		 * next(): Returns the next object and advances the iterator.
 		 * remove(): Removes the last object that was returned by next from the collection.
 		 * 
 		 */
+		
 		Iterator<String> itr=al.iterator();  
 		
 		/**
@@ -47,7 +49,8 @@ public class LinkedList1 {
 		 * Each time you call it.next(), the iterator moves to the next element of the list.
 		 */
 		while(itr.hasNext()){  
-			System.out.println(itr.next());  
+			System.out.println("hasNext return calling... "+itr.next());  
 		}  
+		
 	}  
 }
