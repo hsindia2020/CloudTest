@@ -11,13 +11,13 @@ public class TestClass {
 
 	@Test
 	public void Test01() {
-		
+
 		WebDriver driver;
 		WebDriverManager.firefoxdriver().setup();
-		
+
 		driver = new FirefoxDriver();
 
-//		driver.get("https://www.seleniumeasy.com/test/");
+		driver.get("www.google.com");
 		System.out.println("Site display on screen...");
 		Assert.assertEquals(true, false);
 	}

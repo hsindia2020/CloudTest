@@ -1,7 +1,7 @@
 package com.pcs.collections;
 
 /**
- * A Set is a collection that cannot contain duplicate elements. 
+ * A HashSet is a collection that cannot contain duplicate elements. 
  * It models the mathematical set abstraction.
  * One of the implementations of the Set is the HashSet class.
  * 
@@ -21,8 +21,9 @@ public class HashSetDemo {
 	    set.add("A");
 	    set.add("B");
 	    set.add("C");
-	    //"B" will be print once because its already on HashSet.
+	    //"B" will be print once because its already on HashSet. It will not print duplicate
 	    set.add("B");
+	    set.remove("A");
 	    System.out.println(set);
 	    System.out.println(set.size());
   }

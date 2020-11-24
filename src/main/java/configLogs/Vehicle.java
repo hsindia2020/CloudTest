@@ -31,8 +31,7 @@ public class Vehicle {
 		class A { public static void main(String args[]) {
 			Dog dog = new Dog();
 			dog.makeSound();                }    }  OutPut: Hi */
-		
-		
+
 		// Getter
 		public String getColor() {
 		    return color;

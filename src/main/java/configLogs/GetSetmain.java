@@ -7,6 +7,7 @@ package configLogs;
  * @author Harmeet
  * To achieve encapsulation in Java, declare the class' variables as private 
  * and provide public setter and getter methods to modify and view the variables' values.
+ *
  * In summary, encapsulation provides the following benefits:
  * - Control of the way data is accessed or modified
  * - More flexible and easily changed code

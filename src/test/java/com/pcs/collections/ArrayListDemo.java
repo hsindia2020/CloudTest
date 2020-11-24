@@ -26,9 +26,13 @@ public class ArrayListDemo {
 	  colors.add("Yellow");
 	  colors.add("Blue");
 	  colors.add("Green");
-	  
+
 	  if (colors.contains("Yellow")) {
-		  System.out.println("Yellow in contains conditions");
+		  System.out.println("Yellow contains in conditions" +
+				  " And the Array List size is "+colors.size());
+	  }
+	  else {
+		  System.out.println("If condition failed");
 	  }
 	  Collections.sort(colors);
 	  
@@ -40,9 +44,10 @@ public class ArrayListDemo {
 	   * shuffle(List list): Shuffles (i.e., randomizes) the elements in list.
 	   * 
 	   */
-	  String remcolor = "Yellow";
+	  String remcolor = "Green";
 	  colors.remove(remcolor);
-	  System.out.println("Prints Array List in single Args[] Remove "+remcolor+" "+colors+" "+colors.size());
+	  System.out.println("Prints Array List in single and one Args[] Remove "+remcolor+" Colors "+colors+"" +
+			  "Now the size is "+colors.size());
   }
   @BeforeMethod
   public void beforeMethod() {

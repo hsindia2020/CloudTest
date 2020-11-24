@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="FirstSuite">
 	<suite-files>
-		<suite-file path="./testng.xml" />
-		<suite-file path="./testng1.xml" />
+		<!-- <suite-file path="./testng.xml" />
+		<suite-file path="./testng1.xml" /> -->
+		<suite-file path="./collections.xml" />
+		<suite-file path="./failedTestcase.xml" />
+		<suite-file path="./retryAnalyzer.xml" />
+		
 	</suite-files>
 </suite>

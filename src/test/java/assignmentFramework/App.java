@@ -7,7 +7,7 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-public class App 
+public class App
 {
 	@Parameters("webURL")
 	@Test
@@ -24,13 +24,11 @@ public class App
 		WebDriver driver = new FirefoxDriver(options);
 
 //		String baseURL = "http://the-internet.herokuapp.com/";
-		
-		driver.get(webURL);
 
+		driver.get(webURL);
 		driver.findElement(By.xpath("//a[contains(text(),'A/B Testing')]")).click();
-		
 		Thread.sleep(3000);
-		
+
 		driver.close();
     }
 }

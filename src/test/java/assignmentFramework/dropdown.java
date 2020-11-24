@@ -10,6 +10,8 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class dropdown {
 
 	WebDriver drive = null;
@@ -19,10 +21,12 @@ public class dropdown {
 
 //		String projectPath = System.getProperty("user.dir");
 		System.out.println("FrameWork Running...");
-		System.setProperty("webdriver.gecko.driver","E:\\git\\SeleniumJava\\SeleniumFramework\\geckodriver-v0.24.0-win64\\geckodriver.exe");
+//		System.setProperty("webdriver.gecko.driver","E:\\git\\SeleniumJava\\SeleniumFramework\\geckodriver-v0.24.0-win64\\geckodriver.exe");
+		
+		WebDriverManager.firefoxdriver().setup();
 		
 		FirefoxOptions options = new FirefoxOptions();
-//		options.addArguments("--headless");
+		options.addArguments("--headless");
 		options.addArguments("window-size=1280,800");
 		drive = new FirefoxDriver(options);
 

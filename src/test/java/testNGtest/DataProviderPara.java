@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 public class DataProviderPara {
 
 	@Test(dataProviderClass=TestDataFile.class,dataProvider="data")
+
 	public void registerUser(String firstname,
 			String lastname,
 			String email,

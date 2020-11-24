@@ -1,3 +1,4 @@
+
 package com.pcs.failedTestCase;
 
 import org.testng.ITestContext;
@@ -29,17 +30,14 @@ public class CustomerListener extends BaseClassTC implements ITestListener {
 
 	public void onTestSkipped(ITestResult result) {
 		// TODO Auto-generated method stub
-		
 	}
 
 	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
-		// TODO Auto-generated method stub
-		
+		// TODO Auto-generated method stub	
 	}
 
 	public void onStart(ITestContext context) {
-		// TODO Auto-generated method stub
-		
+		// TODO Auto-generated method stub	
 	}
 
 	public void onFinish(ITestContext context) {

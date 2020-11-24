@@ -8,7 +8,7 @@ public class jfairyDemo {
 	public static void main(String args[]) {
 		
 		Fairy fairycreate = Fairy.create();
-		
+
 		Person person = fairycreate.person();
 		
 		String firstname = person.getFirstName();
