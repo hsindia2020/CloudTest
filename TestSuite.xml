@@ -4,8 +4,8 @@
 		<!-- <suite-file path="./testng.xml" />
 		<suite-file path="./testng1.xml" /> -->
 		<suite-file path="./collections.xml" />
-		<suite-file path="./failedTestcase.xml" />
-		<suite-file path="./retryAnalyzer.xml" />
+		<!-- suite-file path="./failedTestcase.xml" />
+		<suite-file path="./retryAnalyzer.xml" /-->
 		
 	</suite-files>
 </suite>
