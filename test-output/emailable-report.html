@@ -8,11 +8,56 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">23,467</td><td></td><td></td></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">136,704</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">assignmentFramework.dropdown</td><td><a href="#m0">dropD</a></td><td rowspan="1">1609155442177</td><td rowspan="1">12956</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">assignmentFramework.BasicAuth</td><td><a href="#m0">Auth</a></td><td rowspan="1">1609156589230</td><td rowspan="1">18817</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">assignmentFramework.ABtest</td><td><a href="#m1">f</a></td><td rowspan="1">1609156608060</td><td rowspan="1">12709</td></tr><tr class="passedodd"><td rowspan="1">assignmentFramework.AddRemove</td><td><a href="#m2">Element</a></td><td rowspan="1">1609156701240</td><td rowspan="1">21231</td></tr><tr class="passedeven"><td rowspan="1">assignmentFramework.App</td><td><a href="#m3">AppRun</a></td><td rowspan="1">1609156680671</td><td rowspan="1">20541</td></tr><tr class="passedodd"><td rowspan="1">assignmentFramework.CheckBox</td><td><a href="#m4">Check</a></td><td rowspan="1">1609156635198</td><td rowspan="1">24824</td></tr><tr class="passedeven"><td rowspan="1">assignmentFramework.ajaxForm</td><td><a href="#m5">formAjax</a></td><td rowspan="1">1609156629274</td><td rowspan="1">5921</td></tr><tr class="passedodd"><td rowspan="1">assignmentFramework.dropdown</td><td><a href="#m6">dropD</a></td><td rowspan="1">1609156667177</td><td rowspan="1">13491</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">assignmentFramework.dropdown#dropD</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">assignmentFramework.BasicAuth#Auth</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>http://the-internet.herokuapp.com/</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.io.IOException: Cannot run program &quot;E:\git\SeleniumJava\Assign\Assignment\Auth.exe&quot;: CreateProcess error=2, The system cannot find the file specified
+	at java.lang.ProcessBuilder.start(Unknown Source)
+	at java.lang.Runtime.exec(Unknown Source)
+	at java.lang.Runtime.exec(Unknown Source)
+	at java.lang.Runtime.exec(Unknown Source)
+	at assignmentFramework.BasicAuth.Auth(BasicAuth.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.&lt;init&gt;(Unknown Source)
+	at java.lang.ProcessImpl.start(Unknown Source)
+	... 33 more
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">assignmentFramework.ABtest#f</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">assignmentFramework.AddRemove#Element</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>http://the-internet.herokuapp.com/</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">assignmentFramework.App#AppRun</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>http://the-internet.herokuapp.com/</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">assignmentFramework.CheckBox#Check</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">assignmentFramework.ajaxForm#formAjax</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">assignmentFramework.dropdown#dropD</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
