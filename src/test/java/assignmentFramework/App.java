@@ -11,7 +11,7 @@ public class App
 {
 	@Parameters("webURL")
 	@Test
-    public void AppRun(String webURL) throws Exception
+	public void AppRun(String webURL) throws Exception
     {
 //    	String projectPath = System.getProperty("user.dir");
 
@@ -23,7 +23,7 @@ public class App
 		options.addArguments("window-size=1280,800");
 		WebDriver driver = new FirefoxDriver(options);
 
-//		String baseURL = "http://the-internet.herokuapp.com/";
+//		String webURL = "http://the-internet.herokuapp.com/";
 
 		driver.get(webURL);
 		driver.findElement(By.xpath("//a[contains(text(),'A/B Testing')]")).click();

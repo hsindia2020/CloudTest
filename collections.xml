@@ -6,6 +6,7 @@
       <class name="com.pcs.collections.HashSetDemo"/>
       <class name="com.pcs.collections.ArrayListDemo"/>
       <class name="com.pcs.collections.HashMapDemo"/>
+	<class name="com.pcs.collections.LinkedList1"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

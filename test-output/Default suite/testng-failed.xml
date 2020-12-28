@@ -3,11 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testNGtest.ElementDisplay">
+      <class name="assignmentFramework.dropdown">
         <methods>
-          <include name="func"/>
+          <include name="beforeMeth"/>
+          <include name="dropD"/>
+          <include name="afterMeth"/>
         </methods>
-      </class> <!-- testNGtest.ElementDisplay -->
+      </class> <!-- assignmentFramework.dropdown -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -8,13 +8,13 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class BasicAuth {
-	
+
 	@Parameters("webURL")
 	@Test
 	public void Auth(String webURL) throws Exception {
-		
+
 		String filelocation = "E:\\git\\SeleniumJava\\Assign\\Assignment\\Auth.exe";
-		
+
 		String projectPath = System.getProperty("user.dir");
 
 		System.out.println("Project path "+projectPath);
@@ -23,29 +23,29 @@ public class BasicAuth {
 		WebDriver driver = new FirefoxDriver();
 
 //		String baseURL = "http://the-internet.herokuapp.com/";
-		
+
 		driver.get(webURL);
 
 		driver.findElement(By.xpath("//a[contains(text(),'Basic Auth')]")).click();
-		
-		Thread.sleep(3000);
-		
+
+		Thread.sleep(2000);
+
 		Alert alt = driver.switchTo().alert();
 
 		String altMsg = alt.getText();
-		
+
 		System.out.println("alert message is "+altMsg);
 		Thread.sleep(3000);
 
 		Runtime.getRuntime().exec(filelocation);
-		Thread.sleep(9000);
-		
+		Thread.sleep(4000);
+
 //		alt.accept();
 //		alt.dismiss();
-		
+
 		driver.close();
 //		driver.quit();
-		
+
 	}
 
 }

@@ -15,16 +15,16 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class dropdown {
 
 	WebDriver drive = null;
-	
+
 	@BeforeMethod
 	public void beforeMeth() {
 
 //		String projectPath = System.getProperty("user.dir");
 		System.out.println("FrameWork Running...");
 //		System.setProperty("webdriver.gecko.driver","E:\\git\\SeleniumJava\\SeleniumFramework\\geckodriver-v0.24.0-win64\\geckodriver.exe");
-		
+
 		WebDriverManager.firefoxdriver().setup();
-		
+
 		FirefoxOptions options = new FirefoxOptions();
 		options.addArguments("--headless");
 		options.addArguments("window-size=1280,800");
@@ -34,44 +34,44 @@ public class dropdown {
 
 	@Test
 	public void dropD() throws Exception {
-		String baseURL = "https://www.seleniumeasy.com/test/";
+		String baseURL = "https://www.seleniumeasy.com/test/basic-select-dropdown-demo.html";
 
 		drive.get(baseURL);
 
-		drive.findElement(By.xpath("//a[@class='dropdown-toggle'][contains(text(),'Input Forms')]")).click();
+//		drive.findElement(By.xpath("//a[@class='dropdown-toggle'][contains(text(),'Input Forms')]")).click();
 
 		Thread.sleep(3000);
-		
-		drive.findElement(By.xpath("//ul[@class='dropdown-menu']//a[contains(text(),'Select Dropdown List')]")).click();
-		
+
+//		drive.findElement(By.xpath("//ul[@class='dropdown-menu']//a[contains(text(),'Select Dropdown List')]")).click();
+
 		WebElement month_dropdown = drive.findElement(By.xpath("//select[@id='select-demo']"));
-		
+
 		/**
 		 * Using "Select" for dropdown selection, as static values available
 		 */
 		Select month_dd = new Select(month_dropdown);
-		
+
 		WebElement selected_month = month_dd.getFirstSelectedOption();
 		System.out.println("Day selected is "+selected_month.getText());
-		
+
 		month_dd.selectByVisibleText("Tuesday");
 		WebElement selected_day = month_dd.getFirstSelectedOption();
 		System.out.println("Day selected is "+selected_day.getText());
 		Thread.sleep(2000);
-		
+
 		WebElement state_dropdown = drive.findElement(By.id("multi-select"));
 		Select state_dd = new Select(state_dropdown);
-		
+
 		state_dd.selectByValue("Ohio");
 		Thread.sleep(2000);
 		state_dd.selectByValue("Florida");
 		Thread.sleep(3000);
 	}
-	
+
 		@AfterTest
 		public void afterMeth() {
 
 			drive.close();
 		}
-		
+
 }

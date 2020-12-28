@@ -32,15 +32,15 @@ public class ajaxForm {
 	@Test
 	public void formAjax() throws InterruptedException {
 
-		String baseURL = "https://www.seleniumeasy.com/test/";
+		String baseURL = "https://www.seleniumeasy.com/test/ajax-form-submit-demo.html";
 
 		drive.get(baseURL);
 
-		drive.findElement(By.xpath("//a[@class='dropdown-toggle'][contains(text(),'Input Forms')]")).click();
+//		drive.findElement(By.xpath("//a[@class='dropdown-toggle'][contains(text(),'Input Forms')]")).click();
 
 		Thread.sleep(3000);
 
-		drive.findElement(By.xpath("//ul[@class='dropdown-menu']//a[contains(text(),'Ajax Form Submit')]")).click();
+//		drive.findElement(By.xpath("//ul[@class='dropdown-menu']//a[contains(text(),'Ajax Form Submit')]")).click();
 		drive.findElement(By.xpath("//input[@id='title']")).sendKeys("Ajax form Test");
 		drive.findElement(By.xpath("//textarea[@id='description']")).sendKeys("Ajax form Description entered");
 //		Thread.sleep(3000);
@@ -56,7 +56,7 @@ public class ajaxForm {
 
 //		polymorphic(occurring in several different forms, in particular with reference to species or genetic variation.)
 		Assert.assertEquals(ajaxstring, ajaxstring2);
-	
+
 //		try {
 //			Assert.assertEquals(ajaxstring, ajaxstring1);
 //		}catch(Throwable a) {
