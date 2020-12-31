@@ -3,13 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="assignmentFramework.dropdown">
+      <class name="interactions.DynamicTablecontent">
         <methods>
           <include name="beforeMeth"/>
-          <include name="dropD"/>
-          <include name="afterMeth"/>
+          <include name="sort"/>
         </methods>
-      </class> <!-- assignmentFramework.dropdown -->
+      </class> <!-- interactions.DynamicTablecontent -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,13 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="7" passed="6">
+<testng-results skipped="0" failed="1" ignored="0" total="10" passed="9">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="136704" started-at="2020-12-28T17:26:29 IST" finished-at="2020-12-28T17:28:45 IST">
+  <suite name="Suite" duration-ms="105" started-at="2020-12-31T14:18:14 IST" finished-at="2020-12-31T14:18:14 IST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="136704" started-at="2020-12-28T17:26:29 IST" finished-at="2020-12-28T17:28:45 IST">
+    <test name="Test" duration-ms="105" started-at="2020-12-31T14:18:14 IST" finished-at="2020-12-31T14:18:14 IST">
+      <class name="com.pcs.collections.HashSetDemo">
+        <test-method status="PASS" signature="func()[pri:0, instance:com.pcs.collections.HashSetDemo@e874448]" name="func" duration-ms="8" started-at="2020-12-31T14:18:14 IST" finished-at="2020-12-31T14:18:14 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- func -->
+      </class> <!-- com.pcs.collections.HashSetDemo -->
+      <class name="com.pcs.collections.ArrayListDemo">
+        <test-method status="PASS" signature="func()[pri:0, instance:com.pcs.collections.ArrayListDemo@29b5cd00]" name="func" duration-ms="8" started-at="2020-12-31T14:18:14 IST" finished-at="2020-12-31T14:18:14 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- func -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.pcs.collections.ArrayListDemo@29b5cd00]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-12-31T14:18:14 IST" finished-at="2020-12-31T14:18:14 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+      </class> <!-- com.pcs.collections.ArrayListDemo -->
+      <class name="com.pcs.collections.HashMapDemo">
+        <test-method status="PASS" signature="func()[pri:0, instance:com.pcs.collections.HashMapDemo@60285225]" name="func" duration-ms="8" started-at="2020-12-31T14:18:14 IST" finished-at="2020-12-31T14:18:14 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- func -->
+      </class> <!-- com.pcs.collections.HashMapDemo -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+  <suite name="Suite (0)" duration-ms="154720" started-at="2020-12-31T14:18:14 IST" finished-at="2020-12-31T14:20:48 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="154720" started-at="2020-12-31T14:18:14 IST" finished-at="2020-12-31T14:20:48 IST">
       <class name="assignmentFramework.App">
-        <test-method status="PASS" signature="AppRun(java.lang.String)[pri:0, instance:assignmentFramework.App@5bfbf16f]" name="AppRun" duration-ms="20541" started-at="2020-12-28T17:28:00 IST" finished-at="2020-12-28T17:28:21 IST">
+        <test-method status="PASS" signature="AppRun(java.lang.String)[pri:0, instance:assignmentFramework.App@553a3d88]" name="AppRun" duration-ms="16912" started-at="2020-12-31T14:20:05 IST" finished-at="2020-12-31T14:20:22 IST">
           <params>
             <param index="0">
               <value>
@@ -20,7 +48,7 @@
         </test-method> <!-- AppRun -->
       </class> <!-- assignmentFramework.App -->
       <class name="assignmentFramework.BasicAuth">
-        <test-method status="FAIL" signature="Auth(java.lang.String)[pri:0, instance:assignmentFramework.BasicAuth@45820e51]" name="Auth" duration-ms="18817" started-at="2020-12-28T17:26:29 IST" finished-at="2020-12-28T17:26:48 IST">
+        <test-method status="FAIL" signature="Auth(java.lang.String)[pri:0, instance:assignmentFramework.BasicAuth@3ecd23d9]" name="Auth" duration-ms="25980" started-at="2020-12-31T14:18:14 IST" finished-at="2020-12-31T14:18:40 IST">
           <params>
             <param index="0">
               <value>
@@ -61,6 +89,7 @@ at org.testng.SuiteRunner.run(SuiteRunner.java:286)
 at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
 at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
 at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1182)
 at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
 at org.testng.TestNG.runSuites(TestNG.java:1039)
 at org.testng.TestNG.run(TestNG.java:1007)
@@ -71,7 +100,7 @@ Caused by: java.io.IOException: CreateProcess error=2, The system cannot find th
 at java.lang.ProcessImpl.create(Native Method)
 at java.lang.ProcessImpl.<init>(Unknown Source)
 at java.lang.ProcessImpl.start(Unknown Source)
-... 33 more
+... 34 more
 ]]>
             </full-stacktrace>
           </exception> <!-- java.io.IOException -->
@@ -80,7 +109,7 @@ at java.lang.ProcessImpl.start(Unknown Source)
         </test-method> <!-- Auth -->
       </class> <!-- assignmentFramework.BasicAuth -->
       <class name="assignmentFramework.AddRemove">
-        <test-method status="PASS" signature="Element(java.lang.String)[pri:0, instance:assignmentFramework.AddRemove@25af5db5]" name="Element" duration-ms="21231" started-at="2020-12-28T17:28:21 IST" finished-at="2020-12-28T17:28:42 IST">
+        <test-method status="PASS" signature="Element(java.lang.String)[pri:0, instance:assignmentFramework.AddRemove@7a30d1e6]" name="Element" duration-ms="22430" started-at="2020-12-31T14:20:22 IST" finished-at="2020-12-31T14:20:44 IST">
           <params>
             <param index="0">
               <value>
@@ -93,45 +122,49 @@ at java.lang.ProcessImpl.start(Unknown Source)
         </test-method> <!-- Element -->
       </class> <!-- assignmentFramework.AddRemove -->
       <class name="assignmentFramework.ABtest">
-        <test-method status="PASS" signature="f()[pri:0, instance:assignmentFramework.ABtest@42d8062c]" name="f" duration-ms="12709" started-at="2020-12-28T17:26:48 IST" finished-at="2020-12-28T17:27:00 IST">
+        <test-method status="PASS" signature="f()[pri:0, instance:assignmentFramework.ABtest@569cfc36]" name="f" duration-ms="18399" started-at="2020-12-31T14:18:40 IST" finished-at="2020-12-31T14:18:58 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
       </class> <!-- assignmentFramework.ABtest -->
       <class name="assignmentFramework.CheckBox">
-        <test-method status="PASS" signature="Check()[pri:0, instance:assignmentFramework.CheckBox@cb51256]" name="Check" duration-ms="24824" started-at="2020-12-28T17:27:15 IST" finished-at="2020-12-28T17:27:40 IST">
+        <test-method status="PASS" signature="Check()[pri:0, instance:assignmentFramework.CheckBox@33723e30]" name="Check" duration-ms="25345" started-at="2020-12-31T14:19:18 IST" finished-at="2020-12-31T14:19:43 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Check -->
       </class> <!-- assignmentFramework.CheckBox -->
       <class name="assignmentFramework.dropdown">
-        <test-method status="PASS" signature="beforeMeth()[pri:0, instance:assignmentFramework.dropdown@59906517]" name="beforeMeth" is-config="true" duration-ms="7151" started-at="2020-12-28T17:27:40 IST" finished-at="2020-12-28T17:27:47 IST">
+        <test-method status="PASS" signature="beforeMeth()[pri:0, instance:assignmentFramework.dropdown@64f6106c]" name="beforeMeth" is-config="true" duration-ms="8246" started-at="2020-12-31T14:19:43 IST" finished-at="2020-12-31T14:19:52 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMeth -->
-        <test-method status="PASS" signature="dropD()[pri:0, instance:assignmentFramework.dropdown@59906517]" name="dropD" duration-ms="13491" started-at="2020-12-28T17:27:47 IST" finished-at="2020-12-28T17:28:00 IST">
+        <test-method status="PASS" signature="dropD()[pri:0, instance:assignmentFramework.dropdown@64f6106c]" name="dropD" duration-ms="13365" started-at="2020-12-31T14:19:52 IST" finished-at="2020-12-31T14:20:05 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dropD -->
-        <test-method status="PASS" signature="afterMeth()[pri:0, instance:assignmentFramework.dropdown@59906517]" name="afterMeth" is-config="true" duration-ms="1480" started-at="2020-12-28T17:28:44 IST" finished-at="2020-12-28T17:28:45 IST">
+        <test-method status="PASS" signature="afterMeth()[pri:0, instance:assignmentFramework.dropdown@64f6106c]" name="afterMeth" is-config="true" duration-ms="1782" started-at="2020-12-31T14:20:47 IST" finished-at="2020-12-31T14:20:48 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMeth -->
       </class> <!-- assignmentFramework.dropdown -->
       <class name="assignmentFramework.ajaxForm">
-        <test-method status="PASS" signature="beforeMeth()[pri:0, instance:assignmentFramework.ajaxForm@6043cd28]" name="beforeMeth" is-config="true" duration-ms="8498" started-at="2020-12-28T17:27:00 IST" finished-at="2020-12-28T17:27:09 IST">
+        <test-method status="PASS" signature="beforeMeth()[pri:0, instance:assignmentFramework.ajaxForm@43bd930a]" name="beforeMeth" is-config="true" duration-ms="8564" started-at="2020-12-31T14:18:58 IST" finished-at="2020-12-31T14:19:07 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMeth -->
-        <test-method status="PASS" signature="formAjax()[pri:0, instance:assignmentFramework.ajaxForm@6043cd28]" name="formAjax" duration-ms="5921" started-at="2020-12-28T17:27:09 IST" finished-at="2020-12-28T17:27:15 IST">
+        <test-method status="PASS" signature="formAjax()[pri:0, instance:assignmentFramework.ajaxForm@43bd930a]" name="formAjax" duration-ms="11384" started-at="2020-12-31T14:19:07 IST" finished-at="2020-12-31T14:19:18 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- formAjax -->
-        <test-method status="PASS" signature="afterMeth()[pri:0, instance:assignmentFramework.ajaxForm@6043cd28]" name="afterMeth" is-config="true" duration-ms="1931" started-at="2020-12-28T17:28:42 IST" finished-at="2020-12-28T17:28:44 IST">
+        <test-method status="PASS" signature="afterMeth()[pri:0, instance:assignmentFramework.ajaxForm@43bd930a]" name="afterMeth" is-config="true" duration-ms="2276" started-at="2020-12-31T14:20:44 IST" finished-at="2020-12-31T14:20:47 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMeth -->
       </class> <!-- assignmentFramework.ajaxForm -->
     </test> <!-- Test -->
-  </suite> <!-- Suite -->
+  </suite> <!-- Suite (0) -->
+  <suite name="FirstSuite" duration-ms="0" started-at="2020-12-31T14:20:49 IST" finished-at="2020-12-31T14:20:49 IST">
+    <groups>
+    </groups>
+  </suite> <!-- FirstSuite -->
 </testng-results>
